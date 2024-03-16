@@ -2,7 +2,7 @@
   "version": "0.3.7",
   "license": "MIT",
   "main": "index.js",
-  "types":"./src/index.d.ts",
+  "types": "./src/index.d.ts",
   "description": "Helpers library for Jobber app",
   "engines": {
     "node": ">=20"
@@ -42,14 +42,13 @@
       "require": "./cjs/icons/index.js"
     }
   },
-  "types": "./src/index.d.ts",
   "devDependencies": {
     "@babel/cli": "^7.23.9",
     "@babel/preset-env": "^7.24.0",
     "@babel/preset-typescript": "^7.23.3",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.6",
-    "cross-env": "^7.0.3"
+    "cross-env": "^5.2.1"
   },
   "dependencies": {
     "@elastic/elasticsearch": "^8.12.2",
