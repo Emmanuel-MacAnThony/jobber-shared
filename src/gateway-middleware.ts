@@ -25,6 +25,7 @@ export function verifyGatewayRequest(
     );
   }
   const token: string = req.headers?.gatewaytoken as string;
+  console.log('token:::', token);
   if (!token) {
     throw new NotAuthorizedError(
       'Invalid request',
@@ -36,6 +37,7 @@ export function verifyGatewayRequest(
       token,
       '1282722b942e08c8a6cb033aa6ce850e'
     ) as { id: string; iat: number };
+    console.log('token:::', token, payload);
     if (!tokens.includes(payload.id)) {
       throw new NotAuthorizedError(
         'Invalid request',
